@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 20;
+}
+
+form {
+  min-width: 70%;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#videoDuration {
+  margin-top: 20;
+}

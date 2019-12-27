@@ -11,7 +11,7 @@ app.on("ready", () => {
 ipcMain.on("video:submit", (event, path) => {
   ffmpeg.ffprobe(path, (err, metadata) => {
     if (err) {
-      return console.error("Some error occurred with ffmpeg");
+      return console.error("Error occurred with ffmpeg");
     }
     const duration = metadata.format.duration;
     mainWindow.webContents.send("video:duration", duration);
